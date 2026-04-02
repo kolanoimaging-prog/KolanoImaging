@@ -2,17 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Kolano Imaging</title>
+    <title>KolanoImaging</title>
     <style>
-        body { font-family: Arial; text-align: center; padding: 100px; background-color: #f8f8f8; }
+        body { font-family: Arial; text-align: center; padding: 50px; background-color: #f8f8f8; }
         h1 { font-size: 48px; margin-bottom: 50px; }
-        .button { display: inline-block; padding: 20px 40px; margin: 20px; font-size: 24px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 12px; }
-        .button:hover { background-color: #45a049; }
+        .sections { display: flex; justify-content: center; flex-wrap: wrap; gap: 50px; }
+        .section { text-align: center; }
+        .section img { width: 300px; height: 200px; object-fit: cover; border-radius: 12px; cursor: pointer; transition: transform 0.3s; }
+        .section img:hover { transform: scale(1.05); }
+        .caption { font-size: 24px; margin-top: 15px; }
     </style>
 </head>
 <body>
-    <h1>Kolano Imaging</h1>
-    <a href="music.html" class="button">Music</a>
-    <a href="photography.html" class="button">Photography</a>
+    <h1>KolanoImaging</h1>
+    <div class="sections">
+        <div class="section">
+            <a href="music.html">
+                <img src="music-cover.jpg" alt="Music">
+                <div class="caption">Music</div>
+            </a>
+        </div>
+        <div class="section">
+            <a href="photography.html">
+                <img src="photography-cover.jpg" alt="Photography">
+                <div class="caption">Photography</div>
+            </a>
+        </div>
+    </div>
 </body>
 </html>
