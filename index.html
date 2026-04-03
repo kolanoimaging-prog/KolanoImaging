@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KolanoImaging</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: black;
+      color: white;
+      text-align: center;
+    }
+    h1 {
+      margin-top: 40px;
+      font-size: 3em;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 60px;
+    }
+    .image-button {
+      position: relative;
+      display: inline-block;
+    }
+    .image-button img {
+      width: 300px;
+      height: 200px;
+      border-radius: 10px;
+      object-fit: cover;
+      transition: transform 0.2s;
+    }
+    .image-button:hover img {
+      transform: scale(1.05);
+    }
+    .button-text {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      font-size: 1.5em;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px black;
+      pointer-events: none; /* lets clicks pass through to the image link */
+    }
+  </style>
+</head>
+<body>
+
+<h1>KolanoImaging</h1>
+
+<div class="container">
+  <a href="Photography/index.html" class="image-button">
+    <img src="photography-cover.jpg" alt="Photography">
+    <span class="button-text">Photography</span>
+  </a>
+  <a href="music.html" class="image-button">
+    <img src="music-cover.jpg" alt="Music">
+    <span class="button-text">Music</span>
+  </a>
+</div>
+
+</body>
+</html>
