@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KolanoImaging</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: black;
+      color: white;
+      text-align: center;
+    }
+    h1 {
+      margin-top: 40px;
+      font-size: 3em;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 60px;
+    }
+    .button-image {
+      width: 300px;
+      height: 200px;
+      border-radius: 10px;
+      object-fit: cover;
+      transition: transform 0.2s;
+    }
+    .button-image:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+<h1>KolanoImaging</h1>
+
+<div class="container">
+  <a href="Photography/index.html">
+    <img src="images/photography.jpg" alt="Photography" class="button-image">
+  </a>
+  <a href="music.html">
+    <img src="images/music.jpg" alt="Music" class="button-image">
+  </a>
+</div>
+
+</body>
+</html>
